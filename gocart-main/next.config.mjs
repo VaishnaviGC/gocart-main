@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:{
-        unoptimized: true
-    }
+    experimental:{
+        serverComponentsExternalPackages: ["inngest", "@prisma/client", "prisma"],
+    },
 };
 
 export default nextConfig;
