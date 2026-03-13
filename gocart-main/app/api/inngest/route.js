@@ -7,7 +7,7 @@ import { syncUserCreation,
 // Create an API that serves zero functions
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const { GET, POST } = serve({
+export const { GET, POST, PUT } = serve({
   client: inngest,
   functions: [
     syncUserCreation,
